@@ -8,6 +8,22 @@ public class PlayerController : MonoBehaviour
     private float moveH, moveV;
     [SerializeField] private float moveSpeed = 5f;
 
+    //이모티콘
+
+    public Sprite[] imoticon;
+    public GameObject imoticonPrefab;
+    private KeyCode[] keyCodes = {
+KeyCode.Alpha1,
+KeyCode.Alpha2,
+KeyCode.Alpha3,
+KeyCode.Alpha4,
+KeyCode.Alpha5,
+KeyCode.Alpha6,
+KeyCode.Alpha7,
+KeyCode.Alpha8,
+KeyCode.Alpha9,
+};
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -24,6 +40,6 @@ public class PlayerController : MonoBehaviour
         Vector3 direction = new Vector2(moveH, moveV);
 
     }
-    
+
 
 }
