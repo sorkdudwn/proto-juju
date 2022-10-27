@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CAJ/CAJ_Scenes/CAJ_Start.unity
+    guid: 1774656cd495b664f84c4a634f2d0537
+  - enabled: 1
+    path: Assets/CAJ/CAJ_Scenes/CAJ_ConnectionScene.unity
+    guid: ba2ce03edb4974e4fbfd466ab351e9eb
+  - enabled: 1
+    path: Assets/CAJ/CAJ_Scenes/CAJ_LobbyScene.unity
+    guid: 19535ef1c36a1fb4cb89d2d059b7f8a8
+  - enabled: 1
+    path: Assets/CAJ/CAJ_Scenes/CAJ_RoomScene.unity
+    guid: 4129b00b85fa4e14bb405e157bff3a38
   m_configObjects: {}
