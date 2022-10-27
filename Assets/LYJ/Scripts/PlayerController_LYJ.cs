@@ -69,8 +69,17 @@ KeyCode.Alpha9,
     void GatherInput()
     {
         _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        m_State = State.Walk;
-        anim.SetTrigger("Walking");
+        
+        if (_input == Vector3.zero)
+        {
+            anim.SetBool("Walking", false);
+            m_State = State.Idle;
+        }
+        else
+        {
+            anim.SetBool("Walking", true);
+            m_State = State.Walk;
+        }
 
     }
 
@@ -92,7 +101,6 @@ KeyCode.Alpha9,
     void Move()
     {
         _rb.MovePosition(transform.position + (transform.forward * _input.magnitude) * _speed * Time.deltaTime);
-
 
     }
 

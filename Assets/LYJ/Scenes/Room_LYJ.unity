@@ -336,7 +336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 421098873002828881, guid: c2c837ba9386ca44589472d5bb576aba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.58
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 421098873002828881, guid: c2c837ba9386ca44589472d5bb576aba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1007,7 +1007,6 @@ GameObject:
   - component: {fileID: 1688124034}
   - component: {fileID: 1688124033}
   - component: {fileID: 1688124038}
-  - component: {fileID: 1688124039}
   - component: {fileID: 1688124040}
   m_Layer: 0
   m_Name: Player
@@ -1132,26 +1131,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   imoticonPrefab: {fileID: 259802279}
---- !u!95 &1688124039
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688124032}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 567bcac9a5a5f8242a302aa850051eb7, type: 3}
-  m_Controller: {fileID: 9100000, guid: ad5088d16c1796049ad152823ffc1ac5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_State: 0
 --- !u!114 &1688124040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,6 +1325,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0000001, z: 1.0000001}
   m_Center: {x: -0.0000009536743, y: 0.000030517578, z: 0}
+--- !u!1 &1953918224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1050424606505500395, guid: c2c837ba9386ca44589472d5bb576aba, type: 3}
+  m_PrefabInstance: {fileID: 198488146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1953918225
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953918224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 567bcac9a5a5f8242a302aa850051eb7, type: 3}
+  m_Controller: {fileID: 9100000, guid: ad5088d16c1796049ad152823ffc1ac5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &7825225588164746
 Transform:
   m_ObjectHideFlags: 0
@@ -1744,8 +1749,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4985827291832658695}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.49999997}
-  m_LocalPosition: {x: -82.34701, y: 95.31666, z: -34.347595}
-  m_LocalScale: {x: 12000, y: 12000, z: 992.78595}
+  m_LocalPosition: {x: -82.347, y: 95.31666, z: -34.348}
+  m_LocalScale: {x: 12000, y: 39528, z: 992.78595}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 418776507475324923}
@@ -2162,8 +2167,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032786578273490282}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 37.652992, y: -20.712196, z: -34.34759}
-  m_LocalScale: {x: 12000, y: 12000, z: 992.78595}
+  m_LocalPosition: {x: 37.653, y: -20.712196, z: -34.348}
+  m_LocalScale: {x: 23252.4, y: 47820, z: 992.78595}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 418776507475324923}
@@ -2564,8 +2569,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6347194895731194645}
   m_LocalRotation: {x: 0.7071067, y: 0.7071068, z: 0.00000003793077, w: 0.000000068839384}
-  m_LocalPosition: {x: 37.65298, y: 95.31666, z: 81.681274}
-  m_LocalScale: {x: 12000, y: 12000, z: 992.78595}
+  m_LocalPosition: {x: 37.653, y: 95.31666, z: 81.681}
+  m_LocalScale: {x: 12000, y: 24289.201, z: 992.78595}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 418776507475324923}
