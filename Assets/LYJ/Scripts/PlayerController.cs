@@ -19,8 +19,9 @@ public class PlayerController : MonoBehaviour
         moveV = Input.GetAxisRaw("Vertical") * moveSpeed;
 
         rb.velocity = new Vector2(moveH, moveV);
+        //rb.velocity = new Vector3(moveH, 0, moveV);
 
-        Vector2 direction = new Vector2(moveH, moveV);
+        Vector3 direction = new Vector2(moveH, moveV);
 
     }
     
