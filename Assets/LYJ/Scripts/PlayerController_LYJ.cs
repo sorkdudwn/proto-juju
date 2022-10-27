@@ -25,9 +25,20 @@ KeyCode.Alpha8,
 KeyCode.Alpha9,
 };
 
+    public enum State
+    {
+        Idle,
+        Walk,
+        Sit,
 
+    }
+    public State m_State;
     Animator anim;
 
+    void Start()
+    {
+        anim = GetComponentInChildren<Animator>(); 
+    }
 
     void Update()
     {
@@ -58,6 +69,9 @@ KeyCode.Alpha9,
     void GatherInput()
     {
         _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        m_State = State.Walk;
+        anim.SetTrigger("Walking");
+
     }
 
     void Look()
@@ -78,6 +92,7 @@ KeyCode.Alpha9,
     void Move()
     {
         _rb.MovePosition(transform.position + (transform.forward * _input.magnitude) * _speed * Time.deltaTime);
+
 
     }
 
