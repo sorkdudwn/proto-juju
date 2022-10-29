@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MoveToClick : MonoBehaviour
 {
@@ -9,9 +10,12 @@ public class MoveToClick : MonoBehaviour
     private bool isMove;
     private Vector3 destination;
 
+    NavMeshAgent agent;
+
     private void Awake()
     {
         camera = Camera.main;
+        agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
@@ -19,9 +23,10 @@ public class MoveToClick : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             RaycastHit hit;
-            if (Physics.Raycast(camera.ScreenPointToRay(Input.mousePosition), out hit))
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                SetDestination(hit.point);
+                agent.SetDestination(hit.point);
             }
         }
 
