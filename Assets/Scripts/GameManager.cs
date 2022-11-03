@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        //PhotonNetwork.Instantiate("Player2", new Vector3(0, 2, 0), Quaternion.identity);
-        PhotonNetwork.Instantiate("Player2", new Vector3(-2, 2, -4), Quaternion.identity);
+        //PhotonNetwork.Instantiate("Player", new Vector3(0, 2, 0), Quaternion.identity);
+        PhotonNetwork.Instantiate("Player", new Vector3(-2, 2, -4), Quaternion.identity);
         //OnPhotonSerializeView »£√‚ ∫Ûµµ
         PhotonNetwork.SerializationRate = 60;
         //Rpc »£√‚ ∫Ûµµ

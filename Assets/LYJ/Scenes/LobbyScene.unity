@@ -800,6 +800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3346863398aab46bb4ee9ffc97c2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emoTime: 1
+  checkTime: 0
+  emoOn: 0
 --- !u!1001 &218291161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4055,6 +4058,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e38c154c1bc99c4b9f184a6433def29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 3689158912471633092, guid: cfed7ae99cf31a244a9a72fdfe21985f, type: 3}
+  smoothing: 5
 --- !u!4 &1894764204
 Transform:
   m_ObjectHideFlags: 0
